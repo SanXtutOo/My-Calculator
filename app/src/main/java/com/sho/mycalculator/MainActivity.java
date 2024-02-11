@@ -64,9 +64,15 @@ public class MainActivity extends AppCompatActivity {
                     break;
 
                 case "⌫":
-                    String Text = input.substring(0,input.length()-1);
-                    input = Text;
-                    break;
+
+                    try {
+                        String Text = input.substring(0, input.length()-1);
+                        input = Text;
+                        break;
+                    }catch (Exception e){
+                        System.out.println();
+                    }
+
 
                 default:
                     if(input==null){
